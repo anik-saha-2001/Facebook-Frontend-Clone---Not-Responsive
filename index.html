@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/facebook.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a78cd7a76f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---------------NAVIGATION BAR---------------------->
+    <nav>
+        <!----FACEBOOK LOGO AND SEARCH---->
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="images/facebook.png" class="logo">
+            </a> 
+            <ul>
+                <li><img src="images/magnifying-glass.png" class="search-logo" ></li>
+                <li class="heyli"><img src="images/home.png" class="midlogo"></li>
+                <li class="heyli"><img src="images/watching.png" class="midlogo" ></li>
+                <li class="heyli"><img src="images/marketplace.png" class="midlogo"></li>
+                <li class="heyli"><img src="images/group.png" class="midlogo"></li>
+                <li class="heyli"><img src="images/console.png" class="midlogo"></li>
+            </ul>
+        </div>
+        
+        <!----MENU TO PROFILE PIC---->
+        <div class="nav-right">
+            <ul>
+                <li><img src="images/dots-menu.png"></li>
+                <li><img src="images/messenger.png"></li>
+                <li><img src="images/bell.png"></li>
+            </ul>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/anik-profile-pic.jpg">
+            </div>
+        </div>
+
+
+        <!----------Settings menu---------------->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/anik-profile-pic.jpg">
+                    <div>
+                        <p>Anik Saha</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Log Out</a>
+                </div>
+
+
+            </div>
+            
+        </div>
+
+
+    </nav>
+    <!----------CONTAINER WITH 3 COLOUMNS---------------->
+    <div class="container">
+        <!-----LEFT-SIDEBAR------>
+        <div class="left-sidebar">
+            <!----IMPORTANT LINKS---->
+            <div class="imp-links">
+                <a href="#"><img src="images/anik-profile-pic.jpg" class="left-sidebar-icon-pic">Anik Saha</a>
+                <a href="#"><img src="images/friends.png">Friends</a>
+                <a href="#"><img src="images/news.png">Latest News</a>
+                <a href="#"><img src="images/group.png" class="left-sidebar-icon">Groups</a>
+                <a href="#"><img src="images/marketplace.png" class="left-sidebar-icon">Marketplace</a>
+                <a href="#"><img src="images/watch.png">Watch</a>
+                <a href="#"><img src="images/expand-button.png">See more</a>
+            </div>
+            <!----SHORTCUT LINKS---->
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png">Web Designers</a>
+                <a href="#"><img src="images/shortcut-3.png">Full Stack Developers</a>
+                <a href="#"><img src="images/shortcut-4.png">Web Experts</a>
+
+            </div>
+        </div>
+
+
+
+
+        <!-----MAIN-CONTENT------>
+        <div class="main-content">
+            <!--Stories Section-->
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Create Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Alisson Mina</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Andrew Tate</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Julia Bieber</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Charlie Eminen</p>
+                </div>
+            </div>
+            <!--To Post Section-->
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/anik-profile-pic.jpg">
+                    <div>
+                        <p>Anik Saha</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Anik?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png">Live video</a>
+                        <a href="#"><img src="images/photo.png">Photo/video</a>
+                        <a href="#"><img src="images/feeling.png">Feeling/activity</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--    Friend's Post section    -->
+
+            <!----------------1------------------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/anik-profile-pic.jpg">
+                        <div class="user-post">
+                            <p>Anik Saha</p>
+                            <span>2h . <i class="fa-solid fa-earth-americas" style="color: #9a9a9a;"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Hello <span>Anik</span> &#128525<a href="#">#CloneUsingHTMLCSS</a></p>
+                <img src="images/feed-image-1.png" class="post-img">
+                <hr>
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">125</div>
+                        <div><img src="images/comments.png">45</div>
+                        <div><img src="images/share.png">2</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/anik-profile-pic.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-------------2-------------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-1.png">
+                        <div class="user-post">
+                            <p>Alisson Mina</p>
+                            <span>5h . <i class="fa-solid fa-earth-americas" style="color: #9a9a9a;"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Enjoying the <span>Weekend</span> &#128525<a href="#">#WeekendIsFun</a></p>
+                <img src="images/feed-image-2.png" class="post-img">
+                <hr>
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">208</div>
+                        <div><img src="images/comments.png">87</div>
+                        <div><img src="images/share.png">5</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/anik-profile-pic.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            <!------------------------3------------------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-2.png">
+                        <div class="user-post">
+                            <p>Andrew Tate</p>
+                            <span>10h . <i class="fa-solid fa-earth-americas" style="color: #9a9a9a;"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Walking on the streets of <span>New York City</span> &#128525<a href="#">#WithFriends</a></p>
+                <img src="images/feed-image-3.png" class="post-img">
+                <hr>
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">1.2k</div>
+                        <div><img src="images/comments.png">450</div>
+                        <div><img src="images/share.png">140</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/anik-profile-pic.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button type="button" class="load-more-btn">Load More...</button>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <!-----RIGHT-SIDEBAR------>
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>28</h3>
+                    <span>August</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #1675f0;"></i>Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>15</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #1675f0;"></i>Silicon Valley</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <hr>
+            <div class="sidebar-title">
+                <h4>Advertisements</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+            <hr>
+            <div class="sidebar-title">
+                <h4>Contacts</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <!--        ONLINE USERS SECTION        -->
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Alisson Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Andrew Tate</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Julia Bieber</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-4.png">
+                </div>
+                <p>Charlie Eminen</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-5.png">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Copyright 2023 - Anik Saha </p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
